@@ -8,7 +8,7 @@ socket.on("connect", () => {
   socket.emit("test", "hello from client");
 });
 
-let gameState;
+let gameState = [];
 
 socket.on("state", (state) => {
   gameState = state;
