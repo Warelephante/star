@@ -2,7 +2,7 @@ import Phaser from "phaser";
 
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://star-s58j.onrender.com");
 
 socket.on("connect", () => {
   socket.emit("test", "hello from client");
