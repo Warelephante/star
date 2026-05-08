@@ -70,6 +70,7 @@ function preload() {
     this.load.image('logo', 'https://labs.phaser.io/assets/sprites/phaser3-logo.png');
     this.load.image('Play_im', '/assets/star.png');
     this.load.image('bullet_im', '/assets/bomb.png');
+    this.allsp = [];
 }
 
 function create() {
@@ -77,7 +78,7 @@ function create() {
     this.add.image(400, 300, 'logo');
     this.game_m = game_m;
     //this.allsp = this.add.group();
-    this.allsp = [];
+    
     //this.score = 0;
     this.scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#ffffff' });
 
